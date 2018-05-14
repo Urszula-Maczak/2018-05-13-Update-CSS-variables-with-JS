@@ -1,0 +1,31 @@
+:root { /*pseduklasa :root odnosi się głównego węzła dokumentu, czyli do elementu HTML*/
+	--base: #ffc600; 
+	--spacing: 10px;
+	--blur: 10px;
+} /* dash dash to definiowanie właściwości niestandardowych. Ta specyfikacja definiuje otwarty zestaw właściwości 
+zwanych niestandardowymi właściwościami, które, między innymi, są używane do definiowania wartości 
+podstawienia funkcji var (). Niestandardowe właściwości określają zmienne, do której odwołuja się przez var*/
+
+img {
+	padding: var(--spacing);
+	background: var(--base);
+	filter: blur(var(--blur));
+}
+.h1 {
+	color: var(--base);
+}
+
+body {
+	text-align: center;
+	background: grey;
+	color: white;
+	font-family:'helvetica neue', sans-serif;
+	font-weight: 100;
+	font-size: 50px;
+}
+.controls {
+	margin-bottom: 50px;
+}
+input {
+	width: 100px;
+}
